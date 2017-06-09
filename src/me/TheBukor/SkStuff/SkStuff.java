@@ -350,7 +350,7 @@ public class SkStuff extends JavaPlugin {
 			getLogger().info("It looks like you're running 1.11!");
 		} else if (version.equals("v1_12_R1.")) {
 			nmsMethods = new NMS_v1_12_R1();
-			getLogger().info("§cYou are running an unofficial fork of SkStuff, by Tuke_Nuke. Some nbt stuffs may not work properly!");
+			getServer().getConsoleSender().sendMessage("§c[SkStuff] You are running an unofficial fork of SkStuff, by Tuke_Nuke. Some nbt stuffs may not work properly!");
 		} else {
 			getLogger().warning("It looks like you're running an unsupported server version, some features will not be available :(");
 		}
