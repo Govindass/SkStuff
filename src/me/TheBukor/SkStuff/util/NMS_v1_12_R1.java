@@ -211,7 +211,7 @@ public class NMS_v1_12_R1 implements NMSInterface {
 	@Override
 	public Object getIndex(Object nbtList, int index) {
 		if (nbtList instanceof NBTTagList && index >= 0 && index < ((NBTTagList) nbtList).size()) {
-			NBTBase value = ((NBTTagList) nbtList).h(index);
+			NBTBase value = ((NBTTagList) nbtList).i(index);
 			if (value instanceof NBTTagByte) {
 				return ((NBTTagByte) value).g(); //Byte stored inside a NBTNumber
 			} else if (value instanceof NBTTagShort) {
@@ -485,7 +485,7 @@ public class NMS_v1_12_R1 implements NMSInterface {
 	public NBTTagCompound getEntityNBT(Entity entity) {
 		net.minecraft.server.v1_12_R1.Entity nmsEntity = ((CraftEntity) entity).getHandle();
 		NBTTagCompound NBT = new NBTTagCompound();
-		nmsEntity.e(NBT);
+		nmsEntity.save(NBT);
 		return NBT;
 	}
 
