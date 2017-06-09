@@ -2,7 +2,7 @@
 
 As the owner is missing for a few weeks, this fork brings nbt support to 1.12. Only use it in case the official one still not supported.
 
-**Download it [here](/releases)**
+**Download it [here](https://github.com/Tuke-Nuke/SkStuff/releases)**
 
 In case of **bugs**:
  * If it is a bug related to NBTs or Pathfind and it only happens in 1.12, you can report it here and I will try to help.
