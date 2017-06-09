@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import javax.annotation.Nullable;
 
+import me.TheBukor.SkStuff.util.*;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.OfflinePlayer;
@@ -94,14 +95,6 @@ import me.TheBukor.SkStuff.expressions.ExprToUpperCase;
 import me.TheBukor.SkStuff.expressions.ExprVanishState;
 import me.TheBukor.SkStuff.expressions.ExprWGMemberOwner;
 import me.TheBukor.SkStuff.expressions.ExprWordsToUpperCase;
-import me.TheBukor.SkStuff.util.NMSInterface;
-import me.TheBukor.SkStuff.util.NMS_v1_10_R1;
-import me.TheBukor.SkStuff.util.NMS_v1_11_R1;
-import me.TheBukor.SkStuff.util.NMS_v1_7_R4;
-import me.TheBukor.SkStuff.util.NMS_v1_8_R3;
-import me.TheBukor.SkStuff.util.NMS_v1_9_R1;
-import me.TheBukor.SkStuff.util.NMS_v1_9_R2;
-import me.TheBukor.SkStuff.util.ReflectionUtils;
 
 public class SkStuff extends JavaPlugin {
 	private int condAmount = 0;
@@ -355,6 +348,9 @@ public class SkStuff extends JavaPlugin {
 		} else if (version.equals("v1_11_R1.")) {
 			nmsMethods = new NMS_v1_11_R1();
 			getLogger().info("It looks like you're running 1.11!");
+		} else if (version.equals("v1_12_R1.")) {
+			nmsMethods = new NMS_v1_12_R1();
+			getLogger().info("§cYou are running an unofficial fork of SkStuff, by Tuke_Nuke. Some nbt stuffs may not work properly!");
 		} else {
 			getLogger().warning("It looks like you're running an unsupported server version, some features will not be available :(");
 		}
