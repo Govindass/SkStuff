@@ -1,6 +1,6 @@
 name: SkStuff
 author: TheBukor
 description: A Skript addon which adds extra functionalities such as NBT and extended WorldEdit support.
-version: 1.6.4.1
+version: 1.6.4.1-fork-1.12
 main: me.TheBukor.SkStuff.SkStuff
 softdepend: [Skript, WorldEdit, VanishNoPacket]
