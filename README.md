@@ -1,13 +1,7 @@
 ## Unofficial fork of [SkStuff](https://github.com/TheBukor/SkStuff)
 
-As the owner is missing for a few weeks, this fork brings nbt support to 1.12. Only use it in case the official one still not supported.
+This fork adds 1.13.2 and 1.14.2 support, removes support for older than 1.13 versions, removes worldguard/worldedit, vanishnospacket and nbt stuff. This fork is focused on making pathfinder goals to work as they are unique to SkStuff. Note that I'm not very experienced Java developer yet, so it is possible that I have made some mistakes, but from my little testings things are working.
 
-**Download it [here](https://github.com/Tuke-Nuke/SkStuff/releases)**
+**Download it [here](https://github.com/Govindass/SkStuff/releases)**
 
-In case of **bugs**:
- * If it is a bug related to NBTs or Pathfind and it only happens in 1.12, you can report it here and I will try to help.
- * Any other bugs, should be reported at official pages. Since it is a temporary fork.
- 
----
 
-[**Github**](https://github.com/TheBukor/SkStuff) - [**skUnity**](https://forums.skunity.com/resources/skstuff.131/)
