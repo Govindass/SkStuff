@@ -5,7 +5,7 @@ This fork adds 1.13.2 and 1.14.2 support, removes support for older than 1.13 ve
 **Download it [here](https://github.com/Govindass/SkStuff/releases)**
 
 **List of Pathfinder Goals**
-[code]
+```
 (avoid|run away from) %entitytype%[, radius %number%[, speed %number%[, speed (if|when) (close|near) %number%]]]
 break door[s]
 breed[, [move[ment]] speed %number%] #Note 1
@@ -56,4 +56,4 @@ Notes:
 5 - The boolean argument specifier whether or not the entity should have a direct line of sight of its target. Examples are spiders, by default they can see players through blocks. The boolean argument will ALWAYS be TRUE for SPIDERS.
 6 - If this goal is missing on the entity, it will not be able to attack.
 7 - Can only be applied on Ghasts or Blazes.
-[/code]
+```
