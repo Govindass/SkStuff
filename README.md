@@ -4,7 +4,13 @@ This fork adds 1.13.2 and 1.14.2 support, removes support for older than 1.13 ve
 
 **Download it [here](https://github.com/Govindass/SkStuff/releases)**
 
-**List of Pathfinder Goals**
+**Little Pathfinder Goals Tutorial**
+Add pathfinder goals with: 
+```
+add pathfind[er] goal [[with] priority %-integer%] <insert pathfinder goal here> to %livingentities%
+```
+
+List of Pathfinder Goals
 ```
 (avoid|run away from) %entitytype%[, radius %number%[, speed %number%[, speed (if|when) (close|near) %number%]]]
 break door[s]
