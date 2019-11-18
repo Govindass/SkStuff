@@ -40,12 +40,12 @@ import ch.njol.skript.lang.SkriptParser.ParseResult;
 import ch.njol.skript.util.Timespan;
 import ch.njol.util.Kleenean;
 import me.TheBukor.SkStuff.SkStuff;
-import me.TheBukor.SkStuff.pathfinders.PathfinderGoalFollow_v1_8_R3;
-import me.TheBukor.SkStuff.pathfinders.PathfinderGoalFollow_v1_9_R1;
+import me.TheBukor.SkStuff.pathfinders.PathfinderGoalFollow_v1_13_R2;
+import me.TheBukor.SkStuff.pathfinders.PathfinderGoalFollow_v1_14_R1;
 import me.TheBukor.SkStuff.util.ReflectionUtils;
 import net.minecraft.server.v1_8_R3.EntityCreature;
 
-public class EffSetPathGoal extends Effect {
+public final class EffSetPathGoal extends Effect {
 	private Expression<Integer> goalPriority;
 	private Expression<? extends EntityData<?>> typeToAvoid;
 	private Expression<Number> avoidRadius;
@@ -98,7 +98,7 @@ public class EffSetPathGoal extends Effect {
 
 	@SuppressWarnings("unchecked")
 	@Override
-	public boolean init(Expression<?>[] expr, int matchedPattern, Kleenean arg2, ParseResult result) {
+	public final boolean init(Expression<?>[] expr, int matchedPattern, Kleenean arg2, ParseResult result) {
 		goalPriority = (Expression<Integer>) expr[0];
 		mark = result.mark;
 		if (mark == 0) {
@@ -539,10 +539,10 @@ public class EffSetPathGoal extends Effect {
 							className = "Living";
 						}
 						Class<?> nmsClass = ReflectionUtils.getNMSClass("Entity" + className);
-						if (version.equals("v1_8_R3.")) {
-							newGoals.add(new PathfinderGoalFollow_v1_8_R3((EntityCreature) nmsEnt, nmsClass, radius, spd, usesName, customName));
-						} else if (version.equals("v1_9_R1.")) {
-							newGoals.add(new PathfinderGoalFollow_v1_9_R1((net.minecraft.server.v1_9_R1.EntityCreature) nmsEnt, nmsClass, radius, spd, usesName, customName));
+						if (version.equals("v1_13_R2.")) {
+							newGoals.add(new PathfinderGoalFollow_v1_13_R2((net.minecraft.server.v1_13_R2.EntityCreature) nmsEnt, nmsClass, radius, spd, usesName, customName));
+						} else if (version.equals("v1_14_R1.")) {
+							newGoals.add(new PathfinderGoalFollow_v1_14_R1((net.minecraft.server.v1_14_R1.EntityCreature) nmsEnt, nmsClass, radius, spd, usesName, customName));
 						}
 					}
 				} else if (mark == 42) {

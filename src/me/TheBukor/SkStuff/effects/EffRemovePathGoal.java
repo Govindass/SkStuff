@@ -20,9 +20,9 @@ import ch.njol.skript.lang.Expression;
 import ch.njol.skript.lang.SkriptParser.ParseResult;
 import ch.njol.util.Kleenean;
 import me.TheBukor.SkStuff.SkStuff;
-import me.TheBukor.SkStuff.pathfinders.PathfinderGoalFollow_v1_8_R3;
-import me.TheBukor.SkStuff.pathfinders.PathfinderGoalFollow_v1_9_R1;
 import me.TheBukor.SkStuff.util.ReflectionUtils;
+import me.TheBukor.SkStuff.pathfinders.PathfinderGoalFollow_v1_13_R2;
+import me.TheBukor.SkStuff.pathfinders.PathfinderGoalFollow_v1_14_R1;
 
 public class EffRemovePathGoal extends Effect {
 	private Expression<LivingEntity> entities;
@@ -178,10 +178,10 @@ public class EffRemovePathGoal extends Effect {
 				toRemove = ReflectionUtils.getNMSClass("EntitySlime$PathfinderGoalSlimeIdle");
 			} else if (mark == 41) {
 				String version = ReflectionUtils.getVersion();
-				if (version.equals("v1_8_R3.")) {
-					toRemove = PathfinderGoalFollow_v1_8_R3.class;
-				} else if (version.equals("v1_9_R1.")) {
-					toRemove = PathfinderGoalFollow_v1_9_R1.class;
+				if (version.equals("v1_13_R2.")) {
+					toRemove = PathfinderGoalFollow_v1_13_R2.class;
+				} else if (version.equals("v1_14_R1.")) {
+					toRemove = PathfinderGoalFollow_v1_14_R1.class;
 				}
 			} else if (mark == 42) {
 				if (Skript.isRunningMinecraft(1, 9)) { 
