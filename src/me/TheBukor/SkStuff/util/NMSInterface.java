@@ -1,12 +1,6 @@
 package me.TheBukor.SkStuff.util;
 
-import java.io.File;
-
-import net.minecraft.server.v1_13_R2.EntityTypes;
-import org.bukkit.Location;
-import org.bukkit.block.Block;
 import org.bukkit.entity.Entity;
-import org.bukkit.inventory.ItemStack;
 
 public interface NMSInterface {
 

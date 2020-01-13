@@ -1,48 +1,22 @@
 package me.TheBukor.SkStuff;
 
-import java.io.IOException;
-
-import javax.annotation.Nullable;
-
-import me.TheBukor.SkStuff.util.*;
-import org.bukkit.Bukkit;
-import org.bukkit.Location;
-import org.bukkit.entity.Entity;
-import org.bukkit.event.entity.EntityToggleGlideEvent;
-import org.bukkit.inventory.Inventory;
-import org.bukkit.inventory.ItemStack;
-import org.bukkit.plugin.java.JavaPlugin;
-import org.mcstats.Metrics;
-
-
-
 import ch.njol.skript.Skript;
 import ch.njol.skript.lang.ExpressionType;
 import ch.njol.skript.lang.util.SimpleEvent;
 import ch.njol.skript.registrations.EventValues;
 import ch.njol.skript.util.Getter;
-import me.TheBukor.SkStuff.effects.EffClearPathGoals;
-import me.TheBukor.SkStuff.effects.EffGZipFile;
-import me.TheBukor.SkStuff.effects.EffMakeJump;
-import me.TheBukor.SkStuff.effects.EffRemovePathGoal;
-import me.TheBukor.SkStuff.effects.EffResourceSound;
-import me.TheBukor.SkStuff.effects.EffSetPathGoal;
-import me.TheBukor.SkStuff.effects.EffShowEntityEffect;
-import me.TheBukor.SkStuff.expressions.ExprClickedInventory;
+import me.TheBukor.SkStuff.effects.*;
+import me.TheBukor.SkStuff.expressions.*;
+import me.TheBukor.SkStuff.util.*;
+import org.bukkit.Bukkit;
+import org.bukkit.entity.Entity;
+import org.bukkit.event.entity.EntityToggleGlideEvent;
+import org.bukkit.inventory.Inventory;
+import org.bukkit.plugin.java.JavaPlugin;
+import org.mcstats.Metrics;
 
-import me.TheBukor.SkStuff.expressions.ExprFireProof;
-import me.TheBukor.SkStuff.expressions.ExprGlideState;
-import me.TheBukor.SkStuff.expressions.ExprInventoryOwner;
-
-
-
-import me.TheBukor.SkStuff.expressions.ExprNoClip;
-import me.TheBukor.SkStuff.expressions.ExprNoGravityState;
-
-import me.TheBukor.SkStuff.expressions.ExprTimespanToNumber;
-import me.TheBukor.SkStuff.expressions.ExprToLowerCase;
-import me.TheBukor.SkStuff.expressions.ExprToUpperCase;
-import me.TheBukor.SkStuff.expressions.ExprWordsToUpperCase;
+import javax.annotation.Nullable;
+import java.io.IOException;
 
 public class SkStuff extends JavaPlugin {
 	private int condAmount = 0;
@@ -126,14 +100,22 @@ public class SkStuff extends JavaPlugin {
 	private boolean setupNMSVersion() {
 		String version = ReflectionUtils.getVersion();
 
-		if (version.equals("v1_13_R2.")) {
-			nmsMethods = new NMS_v1_13_R2();
-			getLogger().info("It looks like you're running 1.13.2!");
-		} else if (version.equals("v1_14_R1.")) {
-			nmsMethods = new NMS_v1_14_R1();
-			getLogger().info("It looks like you're running 1.14.2!");
-		} else {
-			getLogger().warning("It looks like you're running an unsupported server version, some features will not be available :(");
+		switch (version) {
+			case "v1_13_R2.":
+				nmsMethods = new NMS_v1_13_R2();
+				getLogger().info("It looks like you're running 1.13.2!");
+				break;
+			case "v1_14_R1.":
+				nmsMethods = new NMS_v1_14_R1();
+				getLogger().info("It looks like you're running 1.14.2!");
+				break;
+			case "v1_15_R1.":
+				nmsMethods = new NMS_v1_15_R1();
+				getLogger().info("It looks like you're running 1.15.1!");
+				break;
+			default:
+				getLogger().warning("It looks like you're running an unsupported server version, some features will not be available :(");
+				break;
 		}
 		return nmsMethods != null;
 	}
