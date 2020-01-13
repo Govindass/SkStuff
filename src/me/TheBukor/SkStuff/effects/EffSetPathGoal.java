@@ -43,7 +43,6 @@ import me.TheBukor.SkStuff.SkStuff;
 import me.TheBukor.SkStuff.pathfinders.PathfinderGoalFollow_v1_13_R2;
 import me.TheBukor.SkStuff.pathfinders.PathfinderGoalFollow_v1_14_R1;
 import me.TheBukor.SkStuff.util.ReflectionUtils;
-import net.minecraft.server.v1_8_R3.EntityCreature;
 
 public final class EffSetPathGoal extends Effect {
 	private Expression<Integer> goalPriority;

@@ -1,31 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="70d91eb4-a0dc-47e6-9359-422d8a6dbe67" name="Default Changelist" comment="" />
+    <list default="true" id="72e0643a-ea45-4e93-b5a5-734a94c41ff5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/pathfinders/PathfinderGoalFollow_v1_15_R1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/$PRODUCT_WORKSPACE_FILE$" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/SkStuff_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/SkStuff_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Govindas.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SkStuff.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SkStuff.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/me/TheBukor/SkStuff/effects/EffSetPathGoal.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/me/TheBukor/SkStuff/effects/EffSetPathGoal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SkStuff_jar/SkStuff.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SkStuff_jar/SkStuff.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/effects/EffSetPathGoal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/effects/EffSetPathGoal.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ErrorTreeViewConfiguration">
-    <option name="autoscrollToSource" value="true" />
-    <option name="IS_AUTOSCROLL_TO_SOURCE" value="true" />
-  </component>
-  <component name="ProjectId" id="1TbbrehnIFtL8XeJqI8ub1rnUl0" />
   <component name="ProjectViewState">
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../import/craftbukkit-1.15.1-R0.1-SNAPSHOT.jar!/" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../import/Skript 2.3.7.jar!/" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="me.TheBukor.SkStuff.util" />
       <recent name="me.TheBukor.SkStuff.pathfinders" />
     </key>
   </component>
@@ -46,30 +53,26 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="70d91eb4-a0dc-47e6-9359-422d8a6dbe67" name="Default Changelist" comment="" />
-      <created>1573731941395</created>
+      <changelist id="72e0643a-ea45-4e93-b5a5-734a94c41ff5" name="Default Changelist" comment="" />
+      <created>1578912360094</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1573731941395</updated>
+      <updated>1578912360094</updated>
     </task>
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="479" y="248" width="408" height="241" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1578911142305">
+    <state x="524" y="109" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1578912712598">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="479" y="248" width="408" height="241" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.728@0.0.1366.728" timestamp="1578911142305" />
-    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1578911282656">
+    <state x="524" y="109" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.0.1366.728@0.0.1366.728" timestamp="1578912712598" />
+    <state x="242" y="54" key="FileChooserDialogImpl" timestamp="1578912928696">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1578911282656" />
-    <state x="163" y="0" key="SettingsEditor" timestamp="1578911286394">
+    <state x="242" y="54" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1578912928696" />
+    <state x="174" y="0" key="SettingsEditor" timestamp="1578913041185">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1578911286394" />
-    <state x="65" y="0" key="new project wizard" timestamp="1577106946881">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="65" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1577106946881" />
+    <state x="174" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1578913041185" />
   </component>
 </project>
