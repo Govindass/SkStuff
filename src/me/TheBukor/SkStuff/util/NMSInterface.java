@@ -1,5 +1,4 @@
 package me.TheBukor.SkStuff.util;
-
 import org.bukkit.entity.Entity;
 
 public interface NMSInterface {
@@ -22,15 +21,6 @@ public interface NMSInterface {
 	public boolean getFireProof(Entity entity);
 
 	public void setFireProof(Entity entity, boolean fireProof);
-
-
-
-
-	public boolean getElytraGlideState(Entity entity);
-
-	public void setElytraGlideState(Entity entity, boolean glide);
-	
-	public boolean getNoGravity(Entity entity);
-	
-	public void setNoGravity(Entity entity, boolean noGravity);
+	public float getEntityStepLength(Entity entity);
+	public void setEntityStepLength(Entity entity, float length);
 }

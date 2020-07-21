@@ -2,11 +2,9 @@ package me.TheBukor.SkStuff.util;
 
 
 import net.minecraft.server.v1_14_R1.EntityInsentient;
-import net.minecraft.server.v1_14_R1.EntityLiving;
 import net.minecraft.server.v1_14_R1.PathfinderGoal;
 import net.minecraft.server.v1_14_R1.PathfinderGoalSelector;
 import org.bukkit.craftbukkit.v1_14_R1.entity.CraftEntity;
-import org.bukkit.craftbukkit.v1_14_R1.entity.CraftLivingEntity;
 import org.bukkit.entity.Entity;
 
 import java.util.Iterator;
@@ -83,30 +81,15 @@ public class NMS_v1_14_R1 implements NMSInterface {
 		net.minecraft.server.v1_14_R1.Entity nmsEntity = ((CraftEntity) entity).getHandle();
 		ReflectionUtils.setField("fireProof", nmsEntity.getClass(), nmsEntity, fireProof);
 	}
-
-
-
-
-
+	@Override
+	public float getEntityStepLength(Entity entity) {
+		net.minecraft.server.v1_14_R1.Entity nmsEntity = ((CraftEntity) entity).getHandle();
+		return nmsEntity.K;
+	}
 
 	@Override
-	public boolean getElytraGlideState(Entity entity) {
-		EntityLiving nmsEntity = ((CraftLivingEntity) entity).getHandle();
-		return nmsEntity.getFlag(7);
-	}
-
-	public void setElytraGlideState(Entity entity, boolean glide) {
-		EntityLiving nmsEntity = ((CraftLivingEntity) entity).getHandle();
-		nmsEntity.setFlag(7, glide);
-	}
-
-	public boolean getNoGravity(Entity entity) {
+	public void setEntityStepLength(Entity entity, float length) {
 		net.minecraft.server.v1_14_R1.Entity nmsEntity = ((CraftEntity) entity).getHandle();
-		return nmsEntity.isNoGravity();
-	}
-
-	public void setNoGravity(Entity entity, boolean noGravity) {
-		net.minecraft.server.v1_14_R1.Entity nmsEntity = ((CraftEntity) entity).getHandle();
-		nmsEntity.setNoGravity(noGravity);
+		nmsEntity.K = length;
 	}
 }

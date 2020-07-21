@@ -538,10 +538,17 @@ public final class EffSetPathGoal extends Effect {
 							className = "Living";
 						}
 						Class<?> nmsClass = ReflectionUtils.getNMSClass("Entity" + className);
-						if (version.equals("v1_13_R2.")) {
-							newGoals.add(new PathfinderGoalFollow_v1_13_R2((net.minecraft.server.v1_13_R2.EntityCreature) nmsEnt, nmsClass, radius, spd, usesName, customName));
-						} else if (version.equals("v1_14_R1.")) {
-							newGoals.add(new PathfinderGoalFollow_v1_14_R1((net.minecraft.server.v1_14_R1.EntityCreature) nmsEnt, nmsClass, radius, spd, usesName, customName));
+						switch (version) {
+							case "v1.12_R1.":
+								newGoals.add(new PathfinderGoalFollow_v1_12_R1((net.minecraft.server.v1_12_R1.EntityCreature) nmsEnt, nmsClass, radius, spd, usesName, customName));
+								break;
+							case "v1.13_R2.":
+								newGoals.add(new PathfinderGoalFollow_v1_13_R2((net.minecraft.server.v1_13_R2.EntityCreature) nmsEnt, nmsClass, radius, spd, usesName, customName));
+								break;
+							case "v1.14_R1.":
+								newGoals.add(new PathfinderGoalFollow_v1_14_R1((net.minecraft.server.v1_14_R1.EntityCreature) nmsEnt, nmsClass, radius, spd, usesName, customName));
+								break;
+							}
 						}
 					}
 				} else if (mark == 42) {

@@ -1,19 +1,15 @@
 package me.TheBukor.SkStuff.util;
 
-
-import net.minecraft.server.v1_13_R2.EntityInsentient;
-import net.minecraft.server.v1_13_R2.PathfinderGoal;
-import net.minecraft.server.v1_13_R2.PathfinderGoalSelector;
-import org.bukkit.craftbukkit.v1_13_R2.entity.CraftEntity;
+import net.minecraft.server.v1_9_R1.EntityInsentient;
+import net.minecraft.server.v1_9_R1.PathfinderGoal;
+import net.minecraft.server.v1_9_R1.PathfinderGoalSelector;
+import org.bukkit.craftbukkit.v1_9_R1.entity.CraftEntity;
 import org.bukkit.entity.Entity;
 
 import java.util.Iterator;
 import java.util.LinkedHashSet;
 
-public class NMS_v1_13_R2 implements NMSInterface {
-
-
-
+public class NMS_v1_9_R1 implements NMSInterface {
 	@Override
 	public void clearPathfinderGoals(Entity entity) {
 		EntityInsentient nmsEnt = (EntityInsentient) ((CraftEntity) entity).getHandle();
@@ -60,36 +56,36 @@ public class NMS_v1_13_R2 implements NMSInterface {
 
 	@Override
 	public boolean getNoClip(Entity entity) {
-		net.minecraft.server.v1_13_R2.Entity nmsEntity = ((CraftEntity) entity).getHandle();
+		net.minecraft.server.v1_9_R1.Entity nmsEntity = ((CraftEntity) entity).getHandle();
 		return nmsEntity.noclip;
 	}
 
 	@Override
 	public void setNoClip(Entity entity, boolean noclip) {
-		net.minecraft.server.v1_13_R2.Entity nmsEntity = ((CraftEntity) entity).getHandle();
+		net.minecraft.server.v1_9_R1.Entity nmsEntity = ((CraftEntity) entity).getHandle();
 		nmsEntity.noclip = noclip;
 	}
 
 	@Override
 	public boolean getFireProof(Entity entity) {
-		net.minecraft.server.v1_13_R2.Entity nmsEntity = ((CraftEntity) entity).getHandle();
+		net.minecraft.server.v1_9_R1.Entity nmsEntity = ((CraftEntity) entity).getHandle();
 		return nmsEntity.isFireProof();
 	}
 
 	@Override
 	public void setFireProof(Entity entity, boolean fireProof) {
-		net.minecraft.server.v1_13_R2.Entity nmsEntity = ((CraftEntity) entity).getHandle();
+		net.minecraft.server.v1_9_R1.Entity nmsEntity = ((CraftEntity) entity).getHandle();
 		ReflectionUtils.setField("fireProof", nmsEntity.getClass(), nmsEntity, fireProof);
 	}
 	@Override
 	public float getEntityStepLength(Entity entity) {
-		net.minecraft.server.v1_13_R2.Entity nmsEntity = ((CraftEntity) entity).getHandle();
-		return nmsEntity.Q;
+		net.minecraft.server.v1_9_R1.Entity nmsEntity = ((CraftEntity) entity).getHandle();
+		return nmsEntity.P;
 	}
 
 	@Override
 	public void setEntityStepLength(Entity entity, float length) {
-		net.minecraft.server.v1_13_R2.Entity nmsEntity = ((CraftEntity) entity).getHandle();
-		nmsEntity.Q = length;
+		net.minecraft.server.v1_9_R1.Entity nmsEntity = ((CraftEntity) entity).getHandle();
+		nmsEntity.P = length;
 	}
 }

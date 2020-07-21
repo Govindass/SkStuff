@@ -1,6 +1,6 @@
-name: SkStuff
-author: [TheBukor, Govindas]
+name: SkPathfinderGoals
+authors: [TheBukor, Govindas]
 description: A Skript addon which adds extra functionalities such as pathfinder goals.
-version: 1.7.0-fork-1.13-1.15
+version: "2.0"
 main: me.TheBukor.SkStuff.SkStuff
 softdepend: [Skript]

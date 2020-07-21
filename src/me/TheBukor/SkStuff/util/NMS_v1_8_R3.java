@@ -1,26 +1,23 @@
 package me.TheBukor.SkStuff.util;
 
-
-import net.minecraft.server.v1_13_R2.EntityInsentient;
-import net.minecraft.server.v1_13_R2.PathfinderGoal;
-import net.minecraft.server.v1_13_R2.PathfinderGoalSelector;
-import org.bukkit.craftbukkit.v1_13_R2.entity.CraftEntity;
+import net.minecraft.server.v1_8_R3.EntityInsentient;
+import net.minecraft.server.v1_8_R3.PathfinderGoal;
+import net.minecraft.server.v1_8_R3.PathfinderGoalSelector;
+import org.bukkit.craftbukkit.v1_8_R3.entity.CraftEntity;
 import org.bukkit.entity.Entity;
 
 import java.util.Iterator;
-import java.util.LinkedHashSet;
+import java.util.List;
 
-public class NMS_v1_13_R2 implements NMSInterface {
-
-
+public class NMS_v1_8_R3 implements NMSInterface {
 
 	@Override
 	public void clearPathfinderGoals(Entity entity) {
 		EntityInsentient nmsEnt = (EntityInsentient) ((CraftEntity) entity).getHandle();
-		((LinkedHashSet<?>) ReflectionUtils.getField("b", PathfinderGoalSelector.class, nmsEnt.goalSelector)).clear();
-		((LinkedHashSet<?>) ReflectionUtils.getField("c", PathfinderGoalSelector.class, nmsEnt.goalSelector)).clear();
-		((LinkedHashSet<?>) ReflectionUtils.getField("b", PathfinderGoalSelector.class, nmsEnt.targetSelector)).clear();
-		((LinkedHashSet<?>) ReflectionUtils.getField("c", PathfinderGoalSelector.class, nmsEnt.targetSelector)).clear();
+		((List<?>) ReflectionUtils.getField("b", PathfinderGoalSelector.class, nmsEnt.goalSelector)).clear();
+		((List<?>) ReflectionUtils.getField("c", PathfinderGoalSelector.class, nmsEnt.goalSelector)).clear();
+		((List<?>) ReflectionUtils.getField("b", PathfinderGoalSelector.class, nmsEnt.targetSelector)).clear();
+		((List<?>) ReflectionUtils.getField("c", PathfinderGoalSelector.class, nmsEnt.targetSelector)).clear();
 	}
 
 	@Override
@@ -28,7 +25,7 @@ public class NMS_v1_13_R2 implements NMSInterface {
 		if (entity instanceof EntityInsentient) {
 			((EntityInsentient) entity).setGoalTarget(null);
 			if (isTargetSelector) {
-				Iterator<?> goals = ((LinkedHashSet<?>) ReflectionUtils.getField("b", PathfinderGoalSelector.class, ((EntityInsentient) entity).targetSelector)).iterator();
+				Iterator<?> goals = ((List<?>) ReflectionUtils.getField("b", PathfinderGoalSelector.class, ((EntityInsentient) entity).targetSelector)).iterator();
 				while (goals.hasNext()) {
 					Object goal = goals.next();
 					if (ReflectionUtils.getField("a", goal.getClass(), goal).getClass() == goalClass) {
@@ -36,7 +33,7 @@ public class NMS_v1_13_R2 implements NMSInterface {
 					}
 				}
 			} else {
-				Iterator<?> goals = ((LinkedHashSet<?>) ReflectionUtils.getField("b", PathfinderGoalSelector.class, ((EntityInsentient) entity).goalSelector)).iterator();
+				Iterator<?> goals = ((List<?>) ReflectionUtils.getField("b", PathfinderGoalSelector.class, ((EntityInsentient) entity).goalSelector)).iterator();
 				while (goals.hasNext()) {
 					Object goal = goals.next();
 					if (ReflectionUtils.getField("a", goal.getClass(), goal).getClass() == goalClass) {
@@ -57,39 +54,39 @@ public class NMS_v1_13_R2 implements NMSInterface {
 		}
 	}
 
-
 	@Override
 	public boolean getNoClip(Entity entity) {
-		net.minecraft.server.v1_13_R2.Entity nmsEntity = ((CraftEntity) entity).getHandle();
+		net.minecraft.server.v1_8_R3.Entity nmsEntity = ((CraftEntity) entity).getHandle();
 		return nmsEntity.noclip;
 	}
 
 	@Override
 	public void setNoClip(Entity entity, boolean noclip) {
-		net.minecraft.server.v1_13_R2.Entity nmsEntity = ((CraftEntity) entity).getHandle();
+		net.minecraft.server.v1_8_R3.Entity nmsEntity = ((CraftEntity) entity).getHandle();
 		nmsEntity.noclip = noclip;
 	}
 
 	@Override
 	public boolean getFireProof(Entity entity) {
-		net.minecraft.server.v1_13_R2.Entity nmsEntity = ((CraftEntity) entity).getHandle();
+		net.minecraft.server.v1_8_R3.Entity nmsEntity = ((CraftEntity) entity).getHandle();
 		return nmsEntity.isFireProof();
 	}
 
 	@Override
 	public void setFireProof(Entity entity, boolean fireProof) {
-		net.minecraft.server.v1_13_R2.Entity nmsEntity = ((CraftEntity) entity).getHandle();
+		net.minecraft.server.v1_8_R3.Entity nmsEntity = ((CraftEntity) entity).getHandle();
 		ReflectionUtils.setField("fireProof", nmsEntity.getClass(), nmsEntity, fireProof);
 	}
+
 	@Override
 	public float getEntityStepLength(Entity entity) {
-		net.minecraft.server.v1_13_R2.Entity nmsEntity = ((CraftEntity) entity).getHandle();
-		return nmsEntity.Q;
+		net.minecraft.server.v1_8_R3.Entity nmsEntity = ((CraftEntity) entity).getHandle();
+		return nmsEntity.S;
 	}
 
 	@Override
 	public void setEntityStepLength(Entity entity, float length) {
-		net.minecraft.server.v1_13_R2.Entity nmsEntity = ((CraftEntity) entity).getHandle();
-		nmsEntity.Q = length;
+		net.minecraft.server.v1_8_R3.Entity nmsEntity = ((CraftEntity) entity).getHandle();
+		nmsEntity.S = length;
 	}
 }

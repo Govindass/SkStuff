@@ -1,10 +1,10 @@
 package me.TheBukor.SkStuff.pathfinders;
 
-import net.minecraft.server.v1_13_R2.Entity;
-import net.minecraft.server.v1_13_R2.EntityCreature;
-import net.minecraft.server.v1_13_R2.EntityLiving;
-import net.minecraft.server.v1_13_R2.PathfinderGoal;
+import me.TheBukor.SkStuff.util.ReflectionUtils;
+import net.minecraft.server.v1_13_R2.*;
 
+import java.lang.reflect.Field;
+import java.util.LinkedHashSet;
 import java.util.List;
 
 public class PathfinderGoalFollow_v1_13_R2 extends PathfinderGoal {
@@ -64,16 +64,13 @@ public class PathfinderGoalFollow_v1_13_R2 extends PathfinderGoal {
 				return false;
 			}
 		}
-		//return follower.getNavigation().n(); // n() means hasNoPath()
 		return true;
 		// n() is now protected void and I'm not sure how to access it, so I'm just returning a boolean, this probably will cause some issues with this pathfinder goal, if you know a better solution, let me know. - Govindas.
 	}
 
-		// c() is execute()
-		@Override
-		public void c () {
-			follower.getNavigation().a(followed, speed); // a() means moveTo()
-		}
-
-
+	// c() is execute()
+	@Override
+	public void c() {
+		follower.getNavigation().a(followed, speed); // a() means moveTo()
 	}
+}

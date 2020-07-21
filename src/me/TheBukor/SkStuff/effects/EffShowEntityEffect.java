@@ -39,7 +39,17 @@ public class EffShowEntityEffect extends Effect {
 		} else if (mark == 4) {
 			effect = EntityEffect.WOLF_SHAKE;
 			toStringMark = "wolf shake";
+		} else if (mark == 5) {
+			effect = EntityEffect.SQUID_ROTATE;
+			toStringMark = "squid rotate";
+		} else if (mark == 6) {
+			effect = EntityEffect.TOTEM_RESURRECT;
+			toStringMark = "totem resurrect";
+		} else if (mark == 7) {
+			effect = EntityEffect.RABBIT_JUMP;
+			toStringMark = "rabbit jump";
 		}
+
 		return true;
 	}
 
