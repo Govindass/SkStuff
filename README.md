@@ -3,7 +3,7 @@
  
 
 
-This fork adds support for 1.13.2, 1.14.2 and 1.15.1 Minecraft versions. removes support for older than 1.13 versions, removes worldguard/worldedit, vanishnospacket and nbt stuff. This fork is focused on making pathfinder goals to work as they are unique to SkStuff.
+This fork adds 1.8 - 1.16 support and removes a lot of stuff, focusing on entity related stuff as they're unique to SkStuff. No support given for versions like 1.9.2 while there's 1.9.4. only latest third digit versions.
 
 **Download it [here](https://github.com/Govindass/SkStuff/releases)**
 
