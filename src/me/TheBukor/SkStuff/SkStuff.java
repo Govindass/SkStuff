@@ -63,10 +63,6 @@ public class SkStuff extends JavaPlugin {
 				nmsMethods = new NMS_v1_8_R3();
 				getLogger().info("It looks like you're running 1.8.8!");
 				break;
-			case "v1_9_R1.":
-				nmsMethods = new NMS_v1_9_R1();
-				getLogger().info("It looks like you're running 1.9.2!");
-				break;
 			case "v1_9_R2.":
 				nmsMethods = new NMS_v1_9_R2();
 				getLogger().info("It looks like you're running 1.9.4!");

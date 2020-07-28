@@ -2,44 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72e0643a-ea45-4e93-b5a5-734a94c41ff5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/SkStuff_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/SkStuff_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SkStuff.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SkStuff.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/META-INF/SkStuff.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/bin/META-INF/SkStuff.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/me/TheBukor/SkStuff/SkStuff$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/me/TheBukor/SkStuff/SkStuff.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/me/TheBukor/SkStuff/SkStuff.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/me/TheBukor/SkStuff/effects/EffResourceSound.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/me/TheBukor/SkStuff/effects/EffShowEntityEffect.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/me/TheBukor/SkStuff/effects/EffShowEntityEffect.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/me/TheBukor/SkStuff/expressions/ExprClickedInventory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/me/TheBukor/SkStuff/pathfinders/PathfinderGoalFollow_v1_13_R2.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/me/TheBukor/SkStuff/pathfinders/PathfinderGoalFollow_v1_13_R2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/me/TheBukor/SkStuff/util/NMSInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/me/TheBukor/SkStuff/util/NMSInterface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/me/TheBukor/SkStuff/util/NMS_v1_13_R2.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/me/TheBukor/SkStuff/util/NMS_v1_13_R2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/me/TheBukor/SkStuff/util/NMS_v1_14_R1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/me/TheBukor/SkStuff/util/NMS_v1_14_R1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/me/TheBukor/SkStuff/util/NMS_v1_15_R1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/me/TheBukor/SkStuff/util/NMS_v1_15_R1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/org/mcstats/Metrics$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/org/mcstats/Metrics$Graph.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/org/mcstats/Metrics$Plotter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/org/mcstats/Metrics.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/plugin.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/SkStuff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/SkStuff.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/effects/EffGZipFile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/effects/EffResourceSound.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/effects/EffSetPathGoal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/effects/EffSetPathGoal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/effects/EffShowEntityEffect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/effects/EffShowEntityEffect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/expressions/ExprClickedInventory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/expressions/ExprGlideState.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/expressions/ExprInventoryOwner.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/expressions/ExprNoGravityState.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/expressions/ExprTimespanToNumber.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/expressions/ExprToLowerCase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/expressions/ExprToUpperCase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/expressions/ExprWordsToUpperCase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/pathfinders/PathfinderGoalFollow_v1_13_R2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/pathfinders/PathfinderGoalFollow_v1_13_R2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/util/NMSInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/util/NMSInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/util/NMS_v1_13_R2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/util/NMS_v1_13_R2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/util/NMS_v1_14_R1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/util/NMS_v1_14_R1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/util/NMS_v1_15_R1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/util/NMS_v1_15_R1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/mcstats/Metrics.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/util/NMS_v1_9_R1.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,10 +81,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1595328184010" />
-    <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1592831111181">
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1595662947316">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1592831111181" />
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1595662947316" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
