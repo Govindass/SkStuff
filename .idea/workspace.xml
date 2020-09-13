@@ -3,8 +3,24 @@
   <component name="ChangeListManager">
     <list default="true" id="72e0643a-ea45-4e93-b5a5-734a94c41ff5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SkStuff.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SkStuff.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/me/TheBukor/SkStuff/SkStuff.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/me/TheBukor/SkStuff/SkStuff.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/me/TheBukor/SkStuff/effects/EffSetPathGoal.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/me/TheBukor/SkStuff/effects/EffSetPathGoal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/me/TheBukor/SkStuff/effects/EffShowEntityEffect.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/me/TheBukor/SkStuff/effects/EffShowEntityEffect.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/me/TheBukor/SkStuff/expressions/ExprInventoryOwner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/me/TheBukor/SkStuff/expressions/ExprTimespanToNumber.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/plugin.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/SkStuff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/SkStuff.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/util/NMS_v1_9_R1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/effects/EffSetPathGoal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/effects/EffSetPathGoal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/util/NMS_v1_10_R1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/util/NMS_v1_10_R1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/util/NMS_v1_11_R1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/util/NMS_v1_11_R1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/util/NMS_v1_12_R1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/util/NMS_v1_12_R1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/util/NMS_v1_13_R2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/util/NMS_v1_13_R2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/util/NMS_v1_14_R1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/util/NMS_v1_14_R1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/util/NMS_v1_15_R1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/util/NMS_v1_15_R1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/util/NMS_v1_16_R1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/util/NMS_v1_16_R1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/util/NMS_v1_8_R3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/util/NMS_v1_8_R3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/util/NMS_v1_9_R2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/util/NMS_v1_9_R2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,15 +45,15 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/plugin.yml" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../import/Paper-1.16.3-latest.jar!/" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="me.TheBukor.SkStuff.pathfinders" />
       <recent name="me.TheBukor.SkStuff.util" />
+      <recent name="me.TheBukor.SkStuff.pathfinders" />
     </key>
   </component>
   <component name="SQLPlugin.ProjectConfiguration">
@@ -69,18 +85,18 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="79" y="101" key="FileChooserDialogImpl" timestamp="1595328182010">
+    <state x="79" y="101" key="FileChooserDialogImpl" timestamp="1599990757268">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="79" y="101" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1595328182010" />
+    <state x="79" y="101" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1599990757268" />
     <state x="348" y="62" key="NewModule_or_Project.wizard" timestamp="1592831160031">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="348" y="62" key="NewModule_or_Project.wizard/0.0.1366.728@0.0.1366.728" timestamp="1592831160031" />
-    <state x="163" y="0" key="SettingsEditor" timestamp="1595328184010">
+    <state x="163" y="0" key="SettingsEditor" timestamp="1599990877200">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1595328184010" />
+    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1599990877200" />
     <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1595662947316">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

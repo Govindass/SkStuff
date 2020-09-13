@@ -6,7 +6,6 @@ import net.minecraft.server.v1_10_R1.PathfinderGoalSelector;
 import org.bukkit.craftbukkit.v1_10_R1.entity.CraftEntity;
 import org.bukkit.entity.Entity;
 
-import java.util.Iterator;
 import java.util.LinkedHashSet;
 
 public class NMS_v1_10_R1 implements NMSInterface {
@@ -24,21 +23,9 @@ public class NMS_v1_10_R1 implements NMSInterface {
 		if (entity instanceof EntityInsentient) {
 			((EntityInsentient) entity).setGoalTarget(null);
 			if (isTargetSelector) {
-				Iterator<?> goals = ((LinkedHashSet<?>) ReflectionUtils.getField("b", PathfinderGoalSelector.class, ((EntityInsentient) entity).targetSelector)).iterator();
-				while (goals.hasNext()) {
-					Object goal = goals.next();
-					if (ReflectionUtils.getField("a", goal.getClass(), goal).getClass() == goalClass) {
-						goals.remove();
-					}
-				}
+				((LinkedHashSet<?>) ReflectionUtils.getField("b", PathfinderGoalSelector.class, ((EntityInsentient) entity).targetSelector)).removeIf(goal -> ReflectionUtils.getField("a", goal.getClass(), goal).getClass() == goalClass);
 			} else {
-				Iterator<?> goals = ((LinkedHashSet<?>) ReflectionUtils.getField("b", PathfinderGoalSelector.class, ((EntityInsentient) entity).goalSelector)).iterator();
-				while (goals.hasNext()) {
-					Object goal = goals.next();
-					if (ReflectionUtils.getField("a", goal.getClass(), goal).getClass() == goalClass) {
-						goals.remove();
-					}
-				}
+				((LinkedHashSet<?>) ReflectionUtils.getField("b", PathfinderGoalSelector.class, ((EntityInsentient) entity).goalSelector)).removeIf(goal -> ReflectionUtils.getField("a", goal.getClass(), goal).getClass() == goalClass);
 			}
 		}
 	}
