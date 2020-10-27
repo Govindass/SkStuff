@@ -539,9 +539,9 @@ public final class EffSetPathGoal extends Effect {
 						}
 						Class<?> nmsClass = ReflectionUtils.getNMSClass("Entity" + className);
 						switch (version) {
-							//case "v1.12_R1.":
-							//	newGoals.add(new PathfinderGoalFollow_v1_12_R1((net.minecraft.server.v1_12_R1.EntityCreature) nmsEnt, nmsClass, radius, spd, usesName, customName));
-							//	break;
+							case "v1.12_R1.":
+								newGoals.add(new PathfinderGoalFollow_v1_12_R1((net.minecraft.server.v1_12_R1.EntityCreature) nmsEnt, nmsClass, radius, spd, usesName, customName));
+								break;
 							case "v1.13_R2.":
 								newGoals.add(new PathfinderGoalFollow_v1_13_R2((net.minecraft.server.v1_13_R2.EntityCreature) nmsEnt, nmsClass, radius, spd, usesName, customName));
 								break;
@@ -550,6 +550,7 @@ public final class EffSetPathGoal extends Effect {
 								break;
 							}
 						}
+					}
 				} else if (mark == 42) {
 					if (!(ent instanceof Skeleton)) {
 						Skript.warning("The pathfinder goal \"Bow Shoot\" can only be applied to skeletons!");

@@ -91,14 +91,6 @@ public class SkStuff extends JavaPlugin {
 				nmsMethods = new NMS_v1_15_R1();
 				getLogger().info("It looks like you're running 1.15.1!");
 				break;
-			case "v1_16_R1.":
-				nmsMethods = new NMS_v1_16_R1();
-				getLogger().info("It looks like you're running 1.16.1!");
-				break;
-			case "v1_16_R2.":
-				nmsMethods = new NMS_v1_16_R2();
-				getLogger().info("It looks like you're running 1.16.2!");
-				break;
 			default:
 				getLogger().warning("It looks like you're running an unsupported server version, some features will not be available :(");
 				break;
