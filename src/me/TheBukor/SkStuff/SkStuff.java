@@ -19,11 +19,6 @@ import javax.annotation.Nullable;
 import java.io.IOException;
 
 public class SkStuff extends JavaPlugin {
-	private int condAmount = 0;
-	private int effAmount = 0;
-	private int evtAmount = 0;
-	private int exprAmount = 0;
-	private int typeAmount = 0;
 
 	private static NMSInterface nmsMethods;
 
@@ -31,7 +26,7 @@ public class SkStuff extends JavaPlugin {
 	public void onEnable() {
 		if (Bukkit.getPluginManager().getPlugin("Skript") != null && Skript.isAcceptRegistrations()) {
 			Skript.registerAddon(this);
-			getLogger().info("SkPathfinderGoals " + this.getDescription().getVersion() + " has been successfully enabled!");
+			getLogger().info("SkStuff " + this.getDescription().getVersion() + " has been successfully enabled!");
 			getLogger().info("Registering general non version specific stuff...");
 			Skript.registerEffect(EffShowEntityEffect.class, "(display|play|show) entity effect (0¦firework[s] explo(de|sion)|1¦hurt|2¦[[iron] golem] (give|offer) (rose|poppy)|3¦[sheep] eat grass|4¦wolf shake|5¦squid rotate|6¦totem resurrect|7¦rabbit jump) (at|on) %entity%");
 			if (setupNMSVersion()) {
@@ -85,11 +80,15 @@ public class SkStuff extends JavaPlugin {
 				break;
 			case "v1_14_R1.":
 				nmsMethods = new NMS_v1_14_R1();
-				getLogger().info("It looks like you're running 1.14.2!");
+				getLogger().info("It looks like you're running 1.14.4!");
 				break;
 			case "v1_15_R1.":
 				nmsMethods = new NMS_v1_15_R1();
-				getLogger().info("It looks like you're running 1.15.1!");
+				getLogger().info("It looks like you're running 1.15.2!");
+				break;
+			case "v1_16_R2.":
+				nmsMethods = new NMS_v1_16_R2();
+				getLogger().info("It looks like you're running 1.16.3!");
 				break;
 			default:
 				getLogger().warning("It looks like you're running an unsupported server version, some features will not be available :(");
@@ -103,6 +102,6 @@ public class SkStuff extends JavaPlugin {
 	}
 
 	public void onDisable() {
-		getLogger().info("SkPathfinderGoals " + this.getDescription().getVersion() + " has been successfully disabled.");
+		getLogger().info("SkStuff " + this.getDescription().getVersion() + " has been successfully disabled.");
 	}
 }

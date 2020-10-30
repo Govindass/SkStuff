@@ -1,10 +1,5 @@
 package me.TheBukor.SkStuff.pathfinders;
-
-import me.TheBukor.SkStuff.util.ReflectionUtils;
 import net.minecraft.server.v1_13_R2.*;
-
-import java.lang.reflect.Field;
-import java.util.LinkedHashSet;
 import java.util.List;
 
 public class PathfinderGoalFollow_v1_13_R2 extends PathfinderGoal {

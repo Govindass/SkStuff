@@ -3,7 +3,6 @@
     <output-path>$PROJECT_DIR$/out/artifacts/SkStuff_jar</output-path>
     <root id="archive" name="SkStuff.jar">
       <element id="module-output" name="SkStuff" />
-      <element id="module-source" name="SkStuff" />
       <element id="file-copy" path="$PROJECT_DIR$/plugin.yml" />
     </root>
   </artifact>

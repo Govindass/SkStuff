@@ -1,14 +1,15 @@
 package me.TheBukor.SkStuff.util;
 
 
+import net.minecraft.server.v1_15_R1.BehaviorController;
 import net.minecraft.server.v1_15_R1.EntityInsentient;
 import net.minecraft.server.v1_15_R1.PathfinderGoal;
 import net.minecraft.server.v1_15_R1.PathfinderGoalSelector;
 import org.bukkit.craftbukkit.v1_15_R1.entity.CraftEntity;
 import org.bukkit.entity.Entity;
 
-import java.util.Iterator;
-import java.util.LinkedHashSet;
+import java.lang.reflect.Field;
+import java.util.*;
 
 public class NMS_v1_15_R1 implements NMSInterface {
 
@@ -16,11 +17,46 @@ public class NMS_v1_15_R1 implements NMSInterface {
 
 	@Override
 	public void clearPathfinderGoals(Entity entity) {
-		EntityInsentient nmsEnt = (EntityInsentient) ((CraftEntity) entity).getHandle();
-		((LinkedHashSet<?>) ReflectionUtils.getField("b", PathfinderGoalSelector.class, nmsEnt.goalSelector)).clear();
-		((LinkedHashSet<?>) ReflectionUtils.getField("c", PathfinderGoalSelector.class, nmsEnt.goalSelector)).clear();
-		((LinkedHashSet<?>) ReflectionUtils.getField("b", PathfinderGoalSelector.class, nmsEnt.targetSelector)).clear();
-		((LinkedHashSet<?>) ReflectionUtils.getField("c", PathfinderGoalSelector.class, nmsEnt.targetSelector)).clear();
+		EntityInsentient nmsEntity = (EntityInsentient) ((CraftEntity) entity).getHandle();
+		PathfinderGoalSelector goalSelector = nmsEntity.goalSelector;
+		PathfinderGoalSelector targetSelector = nmsEntity.targetSelector;
+		try {
+			BehaviorController<?> controller = nmsEntity.getBehaviorController();
+
+			Field memoriesField = BehaviorController.class.getDeclaredField("memories");
+			memoriesField.setAccessible(true);
+			memoriesField.set(controller, new HashMap<>());
+
+			Field sensorsField = BehaviorController.class.getDeclaredField("sensors");
+			sensorsField.setAccessible(true);
+			sensorsField.set(controller, new LinkedHashMap<>());
+
+		} catch (NoSuchFieldException | SecurityException | IllegalArgumentException | IllegalAccessException e) {
+			e.printStackTrace();
+		}
+
+
+		try {
+			Field dField;
+			dField = PathfinderGoalSelector.class.getDeclaredField("d");
+			dField.setAccessible(true);
+			dField.set(goalSelector, new LinkedHashSet<>());
+			dField.set(targetSelector, new LinkedHashSet<>());
+
+			Field cField;
+			cField = PathfinderGoalSelector.class.getDeclaredField("c");
+			cField.setAccessible(true);
+			dField.set(goalSelector, new LinkedHashSet<>());
+			cField.set(targetSelector, new EnumMap<>(PathfinderGoal.Type.class));
+
+			Field fField;
+			fField = PathfinderGoalSelector.class.getDeclaredField("f");
+			fField.setAccessible(true);
+			dField.set(goalSelector, new LinkedHashSet<>());
+			fField.set(targetSelector, EnumSet.noneOf(PathfinderGoal.Type.class));
+		} catch (NoSuchFieldException | SecurityException | IllegalArgumentException | IllegalAccessException e) {
+			e.printStackTrace();
+		}
 	}
 
 	@Override

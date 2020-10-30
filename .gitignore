@@ -1,6 +1,6 @@
-/out
-/bin
-/target
+out
+bin
+target
 /META-INF
 /.settings
 /.idea

@@ -2,9 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72e0643a-ea45-4e93-b5a5-734a94c41ff5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/SkStuff_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/SkStuff_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/discord.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SkStuff.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SkStuff.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/me/TheBukor/SkStuff/SkStuff.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/me/TheBukor/SkStuff/SkStuff.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/me/TheBukor/SkStuff/effects/EffClearPathGoals.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/me/TheBukor/SkStuff/effects/EffClearPathGoals.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/me/TheBukor/SkStuff/effects/EffMakeJump.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/me/TheBukor/SkStuff/effects/EffMakeJump.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/me/TheBukor/SkStuff/effects/EffRemovePathGoal.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/me/TheBukor/SkStuff/effects/EffRemovePathGoal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/me/TheBukor/SkStuff/effects/EffSetPathGoal.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/me/TheBukor/SkStuff/effects/EffSetPathGoal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/me/TheBukor/SkStuff/effects/EffShowEntityEffect.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/me/TheBukor/SkStuff/effects/EffShowEntityEffect.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/me/TheBukor/SkStuff/expressions/ExprFireProof.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/me/TheBukor/SkStuff/expressions/ExprFireProof.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/me/TheBukor/SkStuff/expressions/ExprNoClip.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/me/TheBukor/SkStuff/expressions/ExprNoClip.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/me/TheBukor/SkStuff/pathfinders/PathfinderGoalFollow_v1_13_R2.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/me/TheBukor/SkStuff/pathfinders/PathfinderGoalFollow_v1_13_R2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/me/TheBukor/SkStuff/pathfinders/PathfinderGoalFollow_v1_14_R1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/me/TheBukor/SkStuff/pathfinders/PathfinderGoalFollow_v1_14_R1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/me/TheBukor/SkStuff/util/NMS_v1_13_R2.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/me/TheBukor/SkStuff/util/NMS_v1_13_R2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/me/TheBukor/SkStuff/util/NMS_v1_14_R1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/me/TheBukor/SkStuff/util/NMS_v1_14_R1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/me/TheBukor/SkStuff/util/NMS_v1_15_R1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/me/TheBukor/SkStuff/util/NMS_v1_15_R1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/me/TheBukor/SkStuff/util/ReflectionUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/me/TheBukor/SkStuff/util/ReflectionUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/plugin.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/SkStuff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/SkStuff.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/util/NMS_v1_9_R1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/effects/EffSetPathGoal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/effects/EffSetPathGoal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/pathfinders/PathfinderGoalFollow_v1_13_R2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/pathfinders/PathfinderGoalFollow_v1_13_R2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/pathfinders/PathfinderGoalFollow_v1_16_R1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/pathfinders/PathfinderGoalFollow_v1_16_R2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/util/NMS_v1_14_R1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/util/NMS_v1_14_R1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/util/NMS_v1_15_R1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/util/NMS_v1_15_R1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/TheBukor/SkStuff/util/NMS_v1_16_R1.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,38 +47,26 @@
   </component>
   <component name="ProjectId" id="1dDc5mH6vdHCfDtdCWF3TtPitSZ" />
   <component name="ProjectViewState">
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/plugin.yml" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../import/Paper-1.16.3-latest.jar" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="me.TheBukor.SkStuff.pathfinders" />
       <recent name="me.TheBukor.SkStuff.util" />
+      <recent name="me.TheBukor.SkStuff.pathfinders" />
     </key>
   </component>
   <component name="SQLPlugin.ProjectConfiguration">
     <queries />
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -69,18 +81,18 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="79" y="101" key="FileChooserDialogImpl" timestamp="1595328182010">
+    <state x="488" y="70" key="#com.intellij.ide.util.MemberChooser" timestamp="1603963583320">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="79" y="101" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1595328182010" />
-    <state x="348" y="62" key="NewModule_or_Project.wizard" timestamp="1592831160031">
+    <state x="488" y="70" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1603963583320" />
+    <state x="79" y="101" key="FileChooserDialogImpl" timestamp="1603966567079">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="348" y="62" key="NewModule_or_Project.wizard/0.0.1366.728@0.0.1366.728" timestamp="1592831160031" />
-    <state x="163" y="0" key="SettingsEditor" timestamp="1595328184010">
+    <state x="79" y="101" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1603966567079" />
+    <state x="163" y="0" key="SettingsEditor" timestamp="1603966572549">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1595328184010" />
+    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1603966572549" />
     <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1595662947316">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

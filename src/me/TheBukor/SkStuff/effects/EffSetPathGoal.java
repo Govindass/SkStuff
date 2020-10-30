@@ -7,6 +7,8 @@ import java.util.List;
 
 import javax.annotation.Nullable;
 
+import me.TheBukor.SkStuff.pathfinders.PathfinderGoalFollow_v1_15_R1;
+import me.TheBukor.SkStuff.pathfinders.PathfinderGoalFollow_v1_16_R2;
 import org.bukkit.Material;
 import org.bukkit.entity.Animals;
 import org.bukkit.entity.ArmorStand;
@@ -265,7 +267,7 @@ public final class EffSetPathGoal extends Effect {
 					newGoals.add(goalFollowAdults.getConstructor(entAnimal, double.class).newInstance(nmsEnt, spd));
 				} else if (mark == 8) {
 					target = true;
-					boolean callHelp = (callForHelp == null ? false : callForHelp.getSingle(e));
+					boolean callHelp = (callForHelp != null && callForHelp.getSingle(e));
 					EntityData<?>[] types = typesToFightBack.getAll(e);
 					List<Class<?>> typesClasses = new ArrayList<Class<?>>();
 					for (EntityData<?> entData : types) {
@@ -327,7 +329,7 @@ public final class EffSetPathGoal extends Effect {
 						}
 					} else {
 						double spd = (meleeSpeed == null ? 1.0D : meleeSpeed.getSingle(e).doubleValue());
-						boolean memorize = (meleeMemorize == null ? false : meleeMemorize.getSingle(e));
+						boolean memorize = (meleeMemorize != null && meleeMemorize.getSingle(e));
 						Class<?> goalMeleeAttack = ReflectionUtils.getNMSClass("PathfinderGoalMeleeAttack");
 						newGoals.add(goalMeleeAttack.getConstructor(entCreature, double.class, boolean.class).newInstance(nmsEnt, spd, memorize));
 					}
@@ -354,7 +356,7 @@ public final class EffSetPathGoal extends Effect {
 							newGoals.add(ReflectionUtils.getConstructor(goalSpiderNearTarget, nmsEnt.getClass(), Class.class).newInstance(nmsEnt, nmsClass));
 						}
 					} else {
-						boolean checkView = (checkSight == null ? true : checkSight.getSingle(e));
+						boolean checkView = (checkSight == null || checkSight.getSingle(e));
 						Class<?> goalNearTarget = ReflectionUtils.getNMSClass("PathfinderGoalNearestAttackableTarget");
 						for (EntityData<?> entData : types) {
 							if (!LivingEntity.class.isAssignableFrom(entData.getType()))
@@ -539,16 +541,21 @@ public final class EffSetPathGoal extends Effect {
 						}
 						Class<?> nmsClass = ReflectionUtils.getNMSClass("Entity" + className);
 						switch (version) {
-							case "v1.12_R1.":
-								newGoals.add(new PathfinderGoalFollow_v1_12_R1((net.minecraft.server.v1_12_R1.EntityCreature) nmsEnt, nmsClass, radius, spd, usesName, customName));
-								break;
+							//case "v1.12_R1.":
+							//	newGoals.add(new PathfinderGoalFollow_v1_12_R1((net.minecraft.server.v1_12_R1.EntityCreature) nmsEnt, nmsClass, radius, spd, usesName, customName));
+							//	break;
 							case "v1.13_R2.":
 								newGoals.add(new PathfinderGoalFollow_v1_13_R2((net.minecraft.server.v1_13_R2.EntityCreature) nmsEnt, nmsClass, radius, spd, usesName, customName));
 								break;
 							case "v1.14_R1.":
 								newGoals.add(new PathfinderGoalFollow_v1_14_R1((net.minecraft.server.v1_14_R1.EntityCreature) nmsEnt, nmsClass, radius, spd, usesName, customName));
 								break;
-							}
+							case "v1.15_R1.":
+								newGoals.add(new PathfinderGoalFollow_v1_15_R1((net.minecraft.server.v1_15_R1.EntityCreature) nmsEnt, nmsClass, radius, spd, usesName, customName));
+								break;
+							case "v1.16_R2.":
+								newGoals.add(new PathfinderGoalFollow_v1_16_R2((net.minecraft.server.v1_16_R2.EntityCreature) nmsEnt, nmsClass, radius, spd, usesName, customName));
+								break;
 						}
 					}
 				} else if (mark == 42) {
