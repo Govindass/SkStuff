@@ -2,21 +2,14 @@ package me.TheBukor.SkStuff;
 
 import ch.njol.skript.Skript;
 import ch.njol.skript.lang.ExpressionType;
-import ch.njol.skript.lang.util.SimpleEvent;
-import ch.njol.skript.registrations.EventValues;
-import ch.njol.skript.util.Getter;
 import me.TheBukor.SkStuff.bstats.Metrics;
 import me.TheBukor.SkStuff.effects.*;
-import me.TheBukor.SkStuff.expressions.*;
+import me.TheBukor.SkStuff.expressions.ExprFireProof;
+import me.TheBukor.SkStuff.expressions.ExprNoClip;
+import me.TheBukor.SkStuff.expressions.ExprStepLength;
 import me.TheBukor.SkStuff.util.*;
 import org.bukkit.Bukkit;
-import org.bukkit.entity.Entity;
-import org.bukkit.event.entity.EntityToggleGlideEvent;
-import org.bukkit.inventory.Inventory;
 import org.bukkit.plugin.java.JavaPlugin;
-
-import javax.annotation.Nullable;
-import java.io.IOException;
 
 public class SkStuff extends JavaPlugin {
 
@@ -89,6 +82,10 @@ public class SkStuff extends JavaPlugin {
 			case "v1_16_R2.":
 				nmsMethods = new NMS_v1_16_R2();
 				getLogger().info("It looks like you're running 1.16.3!");
+				break;
+			case "v1_16_R3.":
+				nmsMethods = new NMS_v1_16_R3();
+				getLogger().info("It looks like you're running 1.16.4!");
 				break;
 			default:
 				getLogger().warning("It looks like you're running an unsupported server version, some features will not be available :(");

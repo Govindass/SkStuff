@@ -1,13 +1,13 @@
 package me.TheBukor.SkStuff.pathfinders;
 
-import net.minecraft.server.v1_16_R2.Entity;
-import net.minecraft.server.v1_16_R2.EntityCreature;
-import net.minecraft.server.v1_16_R2.EntityLiving;
-import net.minecraft.server.v1_16_R2.PathfinderGoal;
+import net.minecraft.server.v1_16_R3.Entity;
+import net.minecraft.server.v1_16_R3.EntityCreature;
+import net.minecraft.server.v1_16_R3.EntityLiving;
+import net.minecraft.server.v1_16_R3.PathfinderGoal;
 
 import java.util.List;
 
-public class PathfinderGoalFollow_v1_16_R2 extends PathfinderGoal {
+public class PathfinderGoalFollow_v1_16_R3 extends PathfinderGoal {
 	private final EntityCreature follower;
 	private EntityLiving followed;
 	private final Class<?> followedClass;
@@ -16,7 +16,7 @@ public class PathfinderGoalFollow_v1_16_R2 extends PathfinderGoal {
 	private final boolean isByName;
 	private final String customName;
 
-	public PathfinderGoalFollow_v1_16_R2(EntityCreature follower, Class<?> followedClass, float radius, double speed, boolean isByName, String customName) {
+	public PathfinderGoalFollow_v1_16_R3(EntityCreature follower, Class<?> followedClass, float radius, double speed, boolean isByName, String customName) {
 		this.follower = follower;
 		this.followedClass = followedClass;
 		this.radius = radius;

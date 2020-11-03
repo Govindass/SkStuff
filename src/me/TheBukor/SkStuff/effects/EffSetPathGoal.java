@@ -7,8 +7,7 @@ import java.util.List;
 
 import javax.annotation.Nullable;
 
-import me.TheBukor.SkStuff.pathfinders.PathfinderGoalFollow_v1_15_R1;
-import me.TheBukor.SkStuff.pathfinders.PathfinderGoalFollow_v1_16_R2;
+import me.TheBukor.SkStuff.pathfinders.*;
 import org.bukkit.Material;
 import org.bukkit.entity.Animals;
 import org.bukkit.entity.ArmorStand;
@@ -42,8 +41,6 @@ import ch.njol.skript.lang.SkriptParser.ParseResult;
 import ch.njol.skript.util.Timespan;
 import ch.njol.util.Kleenean;
 import me.TheBukor.SkStuff.SkStuff;
-import me.TheBukor.SkStuff.pathfinders.PathfinderGoalFollow_v1_13_R2;
-import me.TheBukor.SkStuff.pathfinders.PathfinderGoalFollow_v1_14_R1;
 import me.TheBukor.SkStuff.util.ReflectionUtils;
 
 public final class EffSetPathGoal extends Effect {
@@ -555,6 +552,9 @@ public final class EffSetPathGoal extends Effect {
 								break;
 							case "v1.16_R2.":
 								newGoals.add(new PathfinderGoalFollow_v1_16_R2((net.minecraft.server.v1_16_R2.EntityCreature) nmsEnt, nmsClass, radius, spd, usesName, customName));
+								break;
+							case "v1.16_R3.":
+								newGoals.add(new PathfinderGoalFollow_v1_16_R3((net.minecraft.server.v1_16_R3.EntityCreature) nmsEnt, nmsClass, radius, spd, usesName, customName));
 								break;
 						}
 					}
