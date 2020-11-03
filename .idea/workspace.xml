@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="72e0643a-ea45-4e93-b5a5-734a94c41ff5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/me/TheBukor/SkStuff/SkStuff.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/me/TheBukor/SkStuff/SkStuff.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/me/TheBukor/SkStuff/effects/EffSetPathGoal.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/me/TheBukor/SkStuff/effects/EffSetPathGoal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/plugin.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,8 +36,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="me.TheBukor.SkStuff.util" />
       <recent name="me.TheBukor.SkStuff.pathfinders" />
+      <recent name="me.TheBukor.SkStuff.util" />
     </key>
   </component>
   <component name="SQLPlugin.ProjectConfiguration">

@@ -1,10 +1,7 @@
 out
 bin
 target
-/META-INF
-/.settings
-/.idea
+META-INF
+.settings
+.idea
 SkStuff.iml
-.idea/workspace.xml
-.idea/misc.xml
-.idea/discord.xml
